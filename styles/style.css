@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,600&display=swap');
+@media (max-width: 48rem) {
+    .principal { flex-direction: column; }
+    .imagem_principal { order: -1; }
+}
+:root{
+    --background-color: #000000; 
+    --color-principal:#ffffff;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte--secundaria:'Montserrat', sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    box-sizing:border-box;
+    background: var(--background-color);
+    color: var(--color-principal);
+}
+
+ .titulo-destaque{
+    color: #22D4FD;
+ }
+ .cabecalho{
+   padding: 1% 11%;
+
+}
+.cabecalho_menu{
+   display: flex;
+   gap:5rem;
+   margin: 1rem;
+}
+.cabecalho_menu_link{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #22D4FD;
+   text-decoration: none;
+}
+ .principal{
+   padding: 1% 12%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    margin-bottom: 3rem; 
+ }
+ .descricao{
+   width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: 'Montserrat', sans-serif;
+ }
+  .descricao2{
+   width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: 'Montserrat', sans-serif;
+ }
+ .descricao_titulo{
+   width: 30rem;
+   height: 7.5rem;
+   font-size: 1.9rem;
+   font-family: 'Krona One', sans-serif;
+   
+ }
+ .descricao_titulo2{
+   width: 30rem;
+   height: 3.5rem;
+   font-size: 1.9rem;
+   font-family: 'Krona One', sans-serif;
+ }
+
+
+ .descricao_conteudo{
+   font-size: 1.2rem;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 24;
+ }
+ .descricao_conteudo2{
+   font-size:1.1rem;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 24;
+   gap: 1rem;
+ }
+ .titulo_botoes{
+   font-size: 1.2rem;
+   font-family: 'Krona One', sans-serif;
+   text-align: center;
+ }
+ .descricao_botoes{
+   display: flex;
+   justify-content: center;
+   flex-direction: column; 
+   align-items: center;
+   height: 7rem;
+   gap: 1rem;
+   margin-bottom: 3.5rem;
+}
+.descricao_botao{
+   /* background-color: #22D4FD; */
+   text-align: center;
+   align-items: center;
+   display: flex;
+   width: 45%;
+   padding: 1.344rem 1.813rem;
+   border-radius: 0.5rem;
+   text-decoration: none;
+   color:#f0f0f0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 0.9rem;
+   font-weight: 600;
+   font-style: italic;
+   border: solid 0.063rem #22D4FD;
+   justify-content: center;
+   gap: 1rem;
+}
+.imagem_principal{
+   width: 45%;
+   height: auto;
+   border-radius: 1rem;
+}
+.imagem_botao{
+   width: 1.5rem;
+   height: 1.5rem;
+}
+.descricao_botao:hover{
+   background-color: #272727;
+}
+.rodape{
+   display: flex;
+   justify-content: center;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   color: #000000;
+   padding: 1.5rem;
+   background-color: #22D4FD;
+   text-align: center; 
+   
+}
+/* Tablets grandes (até 1024px) */
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 2% 8%;
+    }
+    
+    .principal {
+        padding: 2% 8%;
+    }
+    
+    .descricao, .descricao2 {
+        width: 28rem;
+    }
+    
+    .descricao_titulo, .descricao_titulo2 {
+        width: 28rem;
+    }
+    
+    .imagem_principal {
+        width: 22rem;
+    }
+}
+
+/* Tablets (até 768px) - Começa a transição para mobile */
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 3% 5%;
+    }
+    
+    .cabecalho_menu {
+        gap: 3rem;
+        justify-content: center;
+    }
+    
+    .cabecalho_menu_link {
+        font-size: 1.3rem;
+    }
+    
+    .principal {
+        padding: 3% 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Imagem vem primeiro no mobile - como no design */
+    .imagem_principal {
+        width: 20rem;
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    .descricao, .descricao2 {
+        width: 100%;
+    }
+    
+    .descricao_titulo, .descricao_titulo2 {
+        width: 100%;
+        font-size: 1.7rem;
+        height: auto;
+        text-align: center;
+    }
+    
+    .descricao_conteudo, .descricao_conteudo2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .descricao_botoes {
+        height: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Smartphones (até 480px) - Layout mobile igual ao design */
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 4% 4%;
+    }
+    
+    .cabecalho_menu {
+        gap: 2rem;
+    }
+    
+    .cabecalho_menu_link {
+        font-size: 1.1rem;
+    }
+    
+    .principal {
+        padding: 4% 4%;
+    }
+    
+    .imagem_principal {
+        width: 18rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .descricao, .descricao2 {
+        width: 100%;
+        gap: 2rem;
+    }
+    
+    .descricao_titulo, .descricao_titulo2 {
+        width: 100%;
+        font-size: 1.5rem;
+        height: auto;
+    }
+    
+    .descricao_conteudo {
+        font-size: 1rem;
+    }
+    
+    .descricao_conteudo2 {
+        font-size: 0.95rem;
+    }
+    
+    .titulo_botoes {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .descricao_botao {
+        width: 10rem;
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .rodape {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Smartphones pequenos (até 320px) - Versão mais compacta */
+@media (max-width: 320px) {
+    .cabecalho {
+        padding: 5% 3%;
+    }
+    
+    .cabecalho_menu {
+        gap: 1.5rem;
+    }
+    
+    .cabecalho_menu_link {
+        font-size: 1rem;
+    }
+    
+    .principal {
+        padding: 5% 3%;
+    }
+    
+    .imagem_principal {
+        width: 16rem;
+        margin-bottom: 1rem;
+    }
+    
+    .descricao, .descricao2 {
+        gap: 1.5rem;
+    }
+    
+    .descricao_titulo, .descricao_titulo2 {
+        font-size: 1.3rem;
+    }
+    
+    .descricao_conteudo, .descricao_conteudo2 {
+        font-size: 0.9rem;
+    }
+    
+    .titulo_botoes {
+        font-size: 0.9rem;
+    }
+    
+    .descricao_botao {
+        width: 9rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .rodape {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+
+
